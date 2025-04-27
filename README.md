@@ -38,7 +38,7 @@ pip install -e .
 
 ```json
 {
-  "ssq-mcp": {
+  "F0ckssq-mcp": {
     "command": "python",
     "args": [
       "-m",
