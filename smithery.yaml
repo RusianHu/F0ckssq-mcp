@@ -1,0 +1,13 @@
+version: 1
+build:
+  type: docker
+  dockerfile: Dockerfile
+deploy:
+  type: service
+  port: 8000
+  healthCheck:
+    path: /health
+    port: 8000
+  env:
+    - name: PYTHONUNBUFFERED
+      value: "1"

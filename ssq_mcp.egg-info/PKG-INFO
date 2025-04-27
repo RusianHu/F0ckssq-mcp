@@ -2,13 +2,15 @@ Metadata-Version: 2.4
 Name: ssq_mcp
 Version: 1.0.0
 Summary: 双色球数据爬虫 MCP 服务
-Home-page: https://github.com/RusianHu/ssq_mcp
+Home-page: https://github.com/RusianHu/F0ckssq-mcp
 Author: Rusian Huu
 Author-email: hu_bo_cheng@qq.com
 Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
-Requires-Python: >=3.7
+Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: fastmcp>=0.1.0
@@ -31,7 +33,7 @@ Dynamic: summary
 
 # 双色球数据爬虫 MCP 服务
 
-基于 FastMCP 的双色球数据爬虫服务，提供双色球历史数据查询和分析功能。
+双色球数据爬虫 MCP，提供双色球历史数据查询和分析功能。
 
 ## 功能特点
 
@@ -47,15 +49,15 @@ Dynamic: summary
 ### 直接从GitHub安装
 
 ```bash
-pip install git+https://github.com/RusianHu/ssq_mcp.git
+pip install git+https://github.com/RusianHu/F0ckssq-mcp.git
 ```
 
 ### 从源码安装
 
 ```bash
 # 克隆仓库
-git clone https://github.com/RusianHu/ssq_mcp.git
-cd ssq_mcp
+git clone https://github.com/RusianHu/F0ckssq-mcp.git
+cd F0ckssq-mcp
 
 # 安装依赖
 pip install -e .
@@ -69,7 +71,7 @@ pip install -e .
 
 ```json
 {
-  "ssq-mcp": {
+  "F0ckssq-mcp": {
     "command": "python",
     "args": [
       "-m",
@@ -98,7 +100,7 @@ pip install -e .
 }
 ```
 
-## API 说明
+## MCP 工具 说明
 
 ### get_recent_data
 
@@ -157,6 +159,41 @@ pip install -e .
 
 返回：
 - 代理配置信息，包含代理地址和是否启用
+
+## 部署
+
+### 使用 Smithery 部署
+
+本项目支持使用 Smithery 进行云部署。项目已包含必要的配置文件：
+
+1. `Dockerfile` - 使用 Python 3.10 作为基础镜像
+2. `smithery.yaml` - Smithery 配置文件
+
+部署步骤：
+
+1. 确保您已安装 Smithery CLI
+2. 运行以下命令进行部署：
+
+```bash
+smithery deploy
+```
+
+### 手动 Docker 部署
+
+您也可以手动构建和运行 Docker 镜像：
+
+```bash
+# 构建镜像
+docker build -t ssq-mcp .
+
+# 运行容器
+docker run -p 8000:8000 ssq-mcp
+```
+
+## 系统要求
+
+- Python 3.10 或更高版本
+- 依赖包：见 `setup.py` 中的 `install_requires` 列表
 
 ## 许可证
 
