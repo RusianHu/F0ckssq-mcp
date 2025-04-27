@@ -5,6 +5,7 @@ build:
 deploy:
   type: service
   port: 8000
+  startCommand: ["python", "-m", "ssq_mcp"]
   healthCheck:
     path: /health
     port: 8000
