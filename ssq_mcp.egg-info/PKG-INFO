@@ -55,12 +55,6 @@ cd ssq_mcp
 pip install -e .
 ```
 
-### 使用 pip 安装
-
-```bash
-pip install ssq_mcp
-```
-
 ### 直接从GitHub安装
 
 ```bash

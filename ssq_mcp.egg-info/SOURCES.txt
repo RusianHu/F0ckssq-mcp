@@ -1,6 +1,11 @@
 LICENSE
 README.md
 setup.py
+ssq_mcp/__init__.py
+ssq_mcp/__main__.py
+ssq_mcp/config.json
+ssq_mcp/crawler.py
+ssq_mcp/server.py
 ssq_mcp.egg-info/PKG-INFO
 ssq_mcp.egg-info/SOURCES.txt
 ssq_mcp.egg-info/dependency_links.txt
