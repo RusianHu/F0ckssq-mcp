@@ -1,0 +1,18 @@
+{
+  "ssq-mcp": {
+    "command": "python",
+    "args": [
+      "-m",
+      "ssq_mcp"
+    ],
+    "alwaysAllow": [
+      "get_recent_data",
+      "get_data_by_issue_range",
+      "get_data_by_issue",
+      "analyze_frequency",
+      "analyze_missing_periods",
+      "get_proxy_status"
+    ],
+    "disabled": false
+  }
+}

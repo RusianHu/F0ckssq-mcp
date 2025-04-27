@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ssq_mcp.egg-info/PKG-INFO
+ssq_mcp.egg-info/SOURCES.txt
+ssq_mcp.egg-info/dependency_links.txt
+ssq_mcp.egg-info/requires.txt
+ssq_mcp.egg-info/top_level.txt
