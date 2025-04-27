@@ -1,0 +1,7 @@
+你先 get: https://datachart.500.com/ssq/history/newinc/history.php?limit=500&sort=0 ，研究获得的结果。
+利用上面的接口，帮我写一个 python 爬虫，要求至少实现（封装为函数）：
+爬取最近 n 期的双色球数据，在窗口中输出。
+指定输出 xxxxx 期到 xxxxx 期的双色球数据，在窗口中输出。
+指定输出 xxxxx 期的双色球数据，在窗口中输出。
+如果你研究中还找到哪些有用的查询接口或者方法，也一并加入。
+输出格式为 markdown 。
