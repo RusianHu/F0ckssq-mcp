@@ -13,6 +13,12 @@
 
 ## 安装方法
 
+### 直接从GitHub安装
+
+```bash
+pip install git+https://github.com/RusianHu/ssq_mcp.git
+```
+
 ### 从源码安装
 
 ```bash
@@ -22,12 +28,6 @@ cd ssq_mcp
 
 # 安装依赖
 pip install -e .
-```
-
-### 直接从GitHub安装
-
-```bash
-pip install git+https://github.com/RusianHu/ssq_mcp.git
 ```
 
 ## 使用方法
@@ -127,10 +127,6 @@ pip install git+https://github.com/RusianHu/ssq_mcp.git
 返回：
 - 代理配置信息，包含代理地址和是否启用
 
-## 数据来源
-
-数据来源于 500.com 网站：https://datachart.500.com/ssq/history/newinc/history.php
-
 ## 许可证
 
-MIT
+本项目采用 [MIT 许可证](LICENSE)。
