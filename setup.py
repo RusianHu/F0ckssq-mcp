@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Rusian Huu",
     author_email="hu_bo_cheng@qq.com",
-    url="https://github.com/RusianHu/ssq_mcp",
+    url="https://github.com/RusianHu/F0ckssq-mcp",
     packages=find_packages(),
     include_package_data=True,
     package_data={

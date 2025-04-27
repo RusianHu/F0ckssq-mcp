@@ -16,15 +16,15 @@
 ### 直接从GitHub安装
 
 ```bash
-pip install git+https://github.com/RusianHu/ssq_mcp.git
+pip install git+https://github.com/RusianHu/F0ckssq-mcp.git
 ```
 
 ### 从源码安装
 
 ```bash
 # 克隆仓库
-git clone https://github.com/RusianHu/ssq_mcp.git
-cd ssq_mcp
+git clone https://github.com/RusianHu/F0ckssq-mcp.git
+cd F0ckssq-mcp
 
 # 安装依赖
 pip install -e .
