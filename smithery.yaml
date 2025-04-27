@@ -1,7 +1,13 @@
-version: 1
-build:
-  type: docker
-  dockerfile: Dockerfile
-deploy:
-  type: service
-  port: 8000
+# Smithery configuration file
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP
+    type: object
+    properties: {}
+  commandFunction: |
+    (config) => ({
+      "command": "python",
+      "args": ["-m", "ssq_mcp"],
+      "env": {}
+    })
