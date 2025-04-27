@@ -127,36 +127,6 @@ pip install -e .
 返回：
 - 代理配置信息，包含代理地址和是否启用
 
-## 部署
-
-### 使用 Smithery 部署
-
-本项目支持使用 Smithery 进行云部署。项目已包含必要的配置文件：
-
-1. `Dockerfile` - 使用 Python 3.10 作为基础镜像
-2. `smithery.yaml` - Smithery 配置文件
-
-部署步骤：
-
-1. 确保您已安装 Smithery CLI
-2. 运行以下命令进行部署：
-
-```bash
-smithery deploy
-```
-
-### 手动 Docker 部署
-
-您也可以手动构建和运行 Docker 镜像：
-
-```bash
-# 构建镜像
-docker build -t ssq-mcp .
-
-# 运行容器
-docker run -p 8000:8000 ssq-mcp
-```
-
 ## 系统要求
 
 - Python 3.10 或更高版本
